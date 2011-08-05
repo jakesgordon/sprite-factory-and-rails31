@@ -15,7 +15,7 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0.rc"
   gem 'uglifier'
   gem 'therubyracer', '>= 0.8.2' # ensure a javascript runtime is available on ubuntu
-  gem 'sprite-factory'
+  gem 'sprite-factory', '>= 1.4.0'
   gem 'chunky_png' # used by sprite-factory
 end
 

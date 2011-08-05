@@ -1,0 +1,124 @@
+/*
+
+        Creating a sprite from following images:
+        
+        app/assets/images/icons/add_space.png (35x30)
+        app/assets/images/icons/add_virtual.png (35x30)
+        app/assets/images/icons/affiliates.png (35x30)
+        app/assets/images/icons/api.png (35x30)
+        app/assets/images/icons/audit_log.png (35x30)
+        app/assets/images/icons/billing.png (35x30)
+        app/assets/images/icons/bug.png (35x30)
+        app/assets/images/icons/calendar.png (35x30)
+        app/assets/images/icons/chatter.png (35x30)
+        app/assets/images/icons/collaborate.png (35x30)
+        app/assets/images/icons/email.png (35x30)
+        app/assets/images/icons/estimates.png (35x30)
+        app/assets/images/icons/files.png (35x30)
+        app/assets/images/icons/forums.png (35x30)
+        app/assets/images/icons/help.png (35x30)
+        app/assets/images/icons/history.png (35x30)
+        app/assets/images/icons/invite_member.png (35x30)
+        app/assets/images/icons/member_access.png (35x30)
+        app/assets/images/icons/mobile.png (35x30)
+        app/assets/images/icons/package_access.png (35x30)
+        app/assets/images/icons/people.png (35x30)
+        app/assets/images/icons/picker_collapse_all.png (35x30)
+        app/assets/images/icons/picker_expand_all.png (35x30)
+        app/assets/images/icons/portal_access.png (35x30)
+        app/assets/images/icons/profile.png (35x30)
+        app/assets/images/icons/project_access.png (35x30)
+        app/assets/images/icons/rate_sheets.png (35x30)
+        app/assets/images/icons/report_progress.png (35x30)
+        app/assets/images/icons/report_remaining.png (35x30)
+        app/assets/images/icons/report_schedule.png (35x30)
+        app/assets/images/icons/report_total.png (35x30)
+        app/assets/images/icons/report_upcoming.png (35x30)
+        app/assets/images/icons/report_workload.png (35x30)
+        app/assets/images/icons/schedule.png (35x30)
+        app/assets/images/icons/settings.png (35x30)
+        app/assets/images/icons/shortcut-chatter.png (35x30)
+        app/assets/images/icons/shortcut-collaborate.png (35x30)
+        app/assets/images/icons/shortcut-date-drift.png (35x30)
+        app/assets/images/icons/shortcut-estimates.png (35x30)
+        app/assets/images/icons/shortcut-files.png (35x30)
+        app/assets/images/icons/shortcut-history.png (35x30)
+        app/assets/images/icons/shortcut-progress.png (35x30)
+        app/assets/images/icons/shortcut-remaining.png (35x30)
+        app/assets/images/icons/shortcut-schedule.png (35x30)
+        app/assets/images/icons/shortcut-total.png (35x30)
+        app/assets/images/icons/shortcut-trash.png (35x30)
+        app/assets/images/icons/shortcut-upcoming.png (35x30)
+        app/assets/images/icons/shortcut-workload.png (35x30)
+        app/assets/images/icons/summary.png (35x30)
+        app/assets/images/icons/tasks.png (35x30)
+        app/assets/images/icons/timesheet_export.png (35x30)
+        app/assets/images/icons/timesheet_review.png (35x30)
+        app/assets/images/icons/training.png (35x30)
+        app/assets/images/icons/trash.png (35x30)
+        app/assets/images/icons/videos.png (35x30)
+
+        Output files:
+          app/assets/images/icons.png
+          app/assets/images/icons.css
+
+        Output size:
+          245x240
+
+
+*/
+img.icon_add_space { width: 35px; height: 30px; background: url(/assets/icons.png) 0px 0px no-repeat; }
+img.icon_add_virtual { width: 35px; height: 30px; background: url(/assets/icons.png) -35px 0px no-repeat; }
+img.icon_affiliates { width: 35px; height: 30px; background: url(/assets/icons.png) 0px -30px no-repeat; }
+img.icon_api { width: 35px; height: 30px; background: url(/assets/icons.png) -35px -30px no-repeat; }
+img.icon_audit_log { width: 35px; height: 30px; background: url(/assets/icons.png) -70px 0px no-repeat; }
+img.icon_billing { width: 35px; height: 30px; background: url(/assets/icons.png) -70px -30px no-repeat; }
+img.icon_bug { width: 35px; height: 30px; background: url(/assets/icons.png) 0px -60px no-repeat; }
+img.icon_calendar { width: 35px; height: 30px; background: url(/assets/icons.png) -35px -60px no-repeat; }
+img.icon_chatter { width: 35px; height: 30px; background: url(/assets/icons.png) -70px -60px no-repeat; }
+img.icon_collaborate { width: 35px; height: 30px; background: url(/assets/icons.png) -105px 0px no-repeat; }
+img.icon_email { width: 35px; height: 30px; background: url(/assets/icons.png) -105px -30px no-repeat; }
+img.icon_estimates { width: 35px; height: 30px; background: url(/assets/icons.png) -105px -60px no-repeat; }
+img.icon_files { width: 35px; height: 30px; background: url(/assets/icons.png) 0px -90px no-repeat; }
+img.icon_forums { width: 35px; height: 30px; background: url(/assets/icons.png) -35px -90px no-repeat; }
+img.icon_help { width: 35px; height: 30px; background: url(/assets/icons.png) -70px -90px no-repeat; }
+img.icon_history { width: 35px; height: 30px; background: url(/assets/icons.png) -105px -90px no-repeat; }
+img.icon_invite_member { width: 35px; height: 30px; background: url(/assets/icons.png) -140px 0px no-repeat; }
+img.icon_member_access { width: 35px; height: 30px; background: url(/assets/icons.png) -140px -30px no-repeat; }
+img.icon_mobile { width: 35px; height: 30px; background: url(/assets/icons.png) -140px -60px no-repeat; }
+img.icon_package_access { width: 35px; height: 30px; background: url(/assets/icons.png) -140px -90px no-repeat; }
+img.icon_people { width: 35px; height: 30px; background: url(/assets/icons.png) 0px -120px no-repeat; }
+img.icon_picker_collapse_all { width: 35px; height: 30px; background: url(/assets/icons.png) -35px -120px no-repeat; }
+img.icon_picker_expand_all { width: 35px; height: 30px; background: url(/assets/icons.png) -70px -120px no-repeat; }
+img.icon_portal_access { width: 35px; height: 30px; background: url(/assets/icons.png) -105px -120px no-repeat; }
+img.icon_profile { width: 35px; height: 30px; background: url(/assets/icons.png) -140px -120px no-repeat; }
+img.icon_project_access { width: 35px; height: 30px; background: url(/assets/icons.png) -175px 0px no-repeat; }
+img.icon_rate_sheets { width: 35px; height: 30px; background: url(/assets/icons.png) -175px -30px no-repeat; }
+img.icon_report_progress { width: 35px; height: 30px; background: url(/assets/icons.png) -175px -60px no-repeat; }
+img.icon_report_remaining { width: 35px; height: 30px; background: url(/assets/icons.png) -175px -90px no-repeat; }
+img.icon_report_schedule { width: 35px; height: 30px; background: url(/assets/icons.png) -175px -120px no-repeat; }
+img.icon_report_total { width: 35px; height: 30px; background: url(/assets/icons.png) 0px -150px no-repeat; }
+img.icon_report_upcoming { width: 35px; height: 30px; background: url(/assets/icons.png) -35px -150px no-repeat; }
+img.icon_report_workload { width: 35px; height: 30px; background: url(/assets/icons.png) -70px -150px no-repeat; }
+img.icon_schedule { width: 35px; height: 30px; background: url(/assets/icons.png) -105px -150px no-repeat; }
+img.icon_settings { width: 35px; height: 30px; background: url(/assets/icons.png) -140px -150px no-repeat; }
+img.icon_shortcut-chatter { width: 35px; height: 30px; background: url(/assets/icons.png) -175px -150px no-repeat; }
+img.icon_shortcut-collaborate { width: 35px; height: 30px; background: url(/assets/icons.png) 0px -180px no-repeat; }
+img.icon_shortcut-date-drift { width: 35px; height: 30px; background: url(/assets/icons.png) -35px -180px no-repeat; }
+img.icon_shortcut-estimates { width: 35px; height: 30px; background: url(/assets/icons.png) -70px -180px no-repeat; }
+img.icon_shortcut-files { width: 35px; height: 30px; background: url(/assets/icons.png) -105px -180px no-repeat; }
+img.icon_shortcut-history { width: 35px; height: 30px; background: url(/assets/icons.png) -140px -180px no-repeat; }
+img.icon_shortcut-progress { width: 35px; height: 30px; background: url(/assets/icons.png) -175px -180px no-repeat; }
+img.icon_shortcut-remaining { width: 35px; height: 30px; background: url(/assets/icons.png) -210px 0px no-repeat; }
+img.icon_shortcut-schedule { width: 35px; height: 30px; background: url(/assets/icons.png) -210px -30px no-repeat; }
+img.icon_shortcut-total { width: 35px; height: 30px; background: url(/assets/icons.png) -210px -60px no-repeat; }
+img.icon_shortcut-trash { width: 35px; height: 30px; background: url(/assets/icons.png) -210px -90px no-repeat; }
+img.icon_shortcut-upcoming { width: 35px; height: 30px; background: url(/assets/icons.png) -210px -120px no-repeat; }
+img.icon_shortcut-workload { width: 35px; height: 30px; background: url(/assets/icons.png) -210px -150px no-repeat; }
+img.icon_summary { width: 35px; height: 30px; background: url(/assets/icons.png) -210px -180px no-repeat; }
+img.icon_tasks { width: 35px; height: 30px; background: url(/assets/icons.png) 0px -210px no-repeat; }
+img.icon_timesheet_export { width: 35px; height: 30px; background: url(/assets/icons.png) -35px -210px no-repeat; }
+img.icon_timesheet_review { width: 35px; height: 30px; background: url(/assets/icons.png) -70px -210px no-repeat; }
+img.icon_training { width: 35px; height: 30px; background: url(/assets/icons.png) -105px -210px no-repeat; }
+img.icon_trash { width: 35px; height: 30px; background: url(/assets/icons.png) -140px -210px no-repeat; }
+img.icon_videos { width: 35px; height: 30px; background: url(/assets/icons.png) -175px -210px no-repeat; }

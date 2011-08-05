@@ -9,7 +9,7 @@ So far, to use the existing sprite-factory (v1.3.0) the basic steps are
 Add sprite-factory to your Gemfile
 ==================================
 
-Plus its image library dependency (either rmagick or chunky_png)
+Plus its image library dependency (either rmagick or chunkypng)
 
     group :assets do
       # ...
@@ -17,14 +17,31 @@ Plus its image library dependency (either rmagick or chunky_png)
       gem 'chunky_png'
     end
 
-Keep your individual sprite images in the new app/images directory
-==================================================================
+Store sprite image directories in app/assets
+============================================
+
+You could put the sprite folders into the `app/assets/images`
+directory, or if you prefer to keep them separate, create a
+new `app/assets/sprites` directory.
 
 E.g
 
-    app/assets/images/avatars/*.png
-    app/assets/images/icons/*.png
+    app/assets/sprites/avatars/*.png
+    app/assets/sprites/icons/*.png
 
+Add your sprites folder to the assets path (if necessary)
+=========================================================
+
+If you choose to keep your sprite folders separate from the
+existing `app/assets/images` dir then you will need to ensure
+that your new directory is added to the asset path.
+
+E.g. in config/application.rb
+
+    config.assets.paths << File.join(config.root, config.paths["app/assets"], 'sprites') # include sprites folder in asset paths
+
+>> NOTE: if you keep your sprites alongside your normal images
+   in `app/assets/images` then you dont need this step.
 
 Create a Rake task for regenerating your sprites
 ================================================
@@ -43,8 +60,8 @@ E.g. in lib/tasks/assets.rake
         SpriteFactory.layout  = :packed      # pack sprite sheets into optimized rectangles
         SpriteFactory.csspath = '/assets/'   # prepend background image urls with expected rails 3.1 path
 
-        SpriteFactory.run!( 'app/assets/images/avatars'                         )
-        SpriteFactory.run!( 'app/assets/images/icons', :selector => 'img.icon_' )
+        SpriteFactory.run!( 'app/assets/sprites/avatars'                         )
+        SpriteFactory.run!( 'app/assets/sprites/icons', :selector => 'img.icon_' )
       
       end
 
@@ -52,13 +69,13 @@ E.g. in lib/tasks/assets.rake
 
     end
   
-Tell Rails 3.1 Asset Pipeline to include your CSS files
-=======================================================
+Tell the asset pipeline to include your generated css sprite files
+==================================================================
 
 E.g. in app/assets/stylesheets/application.css
 
-    *= require ../images/avatars.css
-    *= require ../images/icons.css
+    *= require avatars.css
+    *= require icons.css
 
 Add a #sprite_tag helper
 ========================

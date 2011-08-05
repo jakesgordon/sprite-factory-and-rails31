@@ -2,30 +2,30 @@
 
         Creating a sprite from following images:
         
-        app/assets/images/avatars/avatar1.png (50x50)
-        app/assets/images/avatars/avatar10.png (50x50)
-        app/assets/images/avatars/avatar11.png (50x50)
-        app/assets/images/avatars/avatar12.png (50x50)
-        app/assets/images/avatars/avatar13.png (50x50)
-        app/assets/images/avatars/avatar14.png (50x50)
-        app/assets/images/avatars/avatar15.png (50x50)
-        app/assets/images/avatars/avatar16.png (50x50)
-        app/assets/images/avatars/avatar17.png (50x50)
-        app/assets/images/avatars/avatar18.png (50x50)
-        app/assets/images/avatars/avatar19.png (50x50)
-        app/assets/images/avatars/avatar2.png (50x50)
-        app/assets/images/avatars/avatar20.png (50x50)
-        app/assets/images/avatars/avatar3.png (50x50)
-        app/assets/images/avatars/avatar4.png (50x50)
-        app/assets/images/avatars/avatar5.png (50x50)
-        app/assets/images/avatars/avatar6.png (50x50)
-        app/assets/images/avatars/avatar7.png (50x50)
-        app/assets/images/avatars/avatar8.png (50x50)
-        app/assets/images/avatars/avatar9.png (50x50)
+        app/assets/sprites/avatars/avatar1.png (50x50)
+        app/assets/sprites/avatars/avatar10.png (50x50)
+        app/assets/sprites/avatars/avatar11.png (50x50)
+        app/assets/sprites/avatars/avatar12.png (50x50)
+        app/assets/sprites/avatars/avatar13.png (50x50)
+        app/assets/sprites/avatars/avatar14.png (50x50)
+        app/assets/sprites/avatars/avatar15.png (50x50)
+        app/assets/sprites/avatars/avatar16.png (50x50)
+        app/assets/sprites/avatars/avatar17.png (50x50)
+        app/assets/sprites/avatars/avatar18.png (50x50)
+        app/assets/sprites/avatars/avatar19.png (50x50)
+        app/assets/sprites/avatars/avatar2.png (50x50)
+        app/assets/sprites/avatars/avatar20.png (50x50)
+        app/assets/sprites/avatars/avatar3.png (50x50)
+        app/assets/sprites/avatars/avatar4.png (50x50)
+        app/assets/sprites/avatars/avatar5.png (50x50)
+        app/assets/sprites/avatars/avatar6.png (50x50)
+        app/assets/sprites/avatars/avatar7.png (50x50)
+        app/assets/sprites/avatars/avatar8.png (50x50)
+        app/assets/sprites/avatars/avatar9.png (50x50)
 
         Output files:
-          app/assets/images/avatars.png
-          app/assets/images/avatars.css
+          app/assets/sprites/avatars.png
+          app/assets/sprites/avatars.css
 
         Output size:
           250x200

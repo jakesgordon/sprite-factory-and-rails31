@@ -21,8 +21,8 @@ namespace :assets do
     # ... but I'll need to update sprite-factory to allow output filename overrides (to add the .erb)
     #
 
-    SpriteFactory.run!( 'app/assets/images/avatars'                         )
-    SpriteFactory.run!( 'app/assets/images/icons', :selector => 'img.icon_' )
+    SpriteFactory.run!( 'app/assets/sprites/avatars'                         )
+    SpriteFactory.run!( 'app/assets/sprites/icons', :selector => 'img.icon_' )
   
   end
 

@@ -17,31 +17,14 @@ Plus its image library dependency (either rmagick or chunkypng)
       gem 'chunky_png'
     end
 
-Store sprite image directories in app/assets
-============================================
-
-You could put the sprite folders into the `app/assets/images`
-directory, or if you prefer to keep them separate, create a
-new `app/assets/sprites` directory.
+Store sprite images in app/assets/images
+========================================
 
 E.g
 
-    app/assets/sprites/avatars/*.png
-    app/assets/sprites/icons/*.png
-
-Add your sprites folder to the assets path (if necessary)
-=========================================================
-
-If you choose to keep your sprite folders separate from the
-existing `app/assets/images` dir then you will need to ensure
-that your new directory is added to the asset path.
-
-E.g. in config/application.rb
-
-    config.assets.paths << File.join(config.root, config.paths["app/assets"], 'sprites') # include sprites folder in asset paths
-
->> NOTE: if you keep your sprites alongside your normal images
-   in `app/assets/images` then you dont need this step.
+    app/assets/images/avatars/*.png
+    app/assets/images/icons/*.png
+    ...
 
 Create a Rake task for regenerating your sprites
 ================================================
@@ -60,8 +43,8 @@ E.g. in lib/tasks/assets.rake
         SpriteFactory.layout  = :packed      # pack sprite sheets into optimized rectangles
         SpriteFactory.csspath = '/assets/'   # prepend background image urls with expected rails 3.1 path
 
-        SpriteFactory.run!( 'app/assets/sprites/avatars'                         )
-        SpriteFactory.run!( 'app/assets/sprites/icons', :selector => 'img.icon_' )
+        SpriteFactory.run!( 'app/assets/images/avatars'                         )
+        SpriteFactory.run!( 'app/assets/images/icons', :selector => 'img.icon_' )
       
       end
 
@@ -76,6 +59,11 @@ E.g. in app/assets/stylesheets/application.css
 
     *= require avatars.css
     *= require icons.css
+
+>> NOTE: rails can find these generated files because they live in the
+   `app/assets/images` directory which is part of the asset pipeline load
+   path. Just because they are css files does not mean they have to live in
+   the `app/assets/stylesheets` directory.
 
 Add a #sprite_tag helper
 ========================
@@ -94,7 +82,6 @@ Somewhere in a view, lets show a sprite
     <%= sprite_tag('icon_email') %>
     <%= sprite_tag('avatar7')    %>
 
-
 GO!
 ==
 
@@ -107,12 +94,15 @@ View your page in a browser
  * BOOYA!
 
 
-
 FUTURE WORK
 ===========
 
-Existing version (1.3.0) of sprite factory is limited to only output .css, .sass or .scss files, but
-in rails 3.1 we would like to also have the option to generate .css.erb, .sass.erb or .scss.erb files
+Having the generated css live in the `app/assets/images` directory smells a little bad. If we had
+an option to specify the output path then we could generate them directly in the `app/assets/stylesheets`
+directory and would no longer need to manually add a `//= require xyz` statement to `application.css`
+
+Also, the existing version (1.3.0) of sprite factory is limited to only output .css, .sass or .scss files,
+but in rails 3.1 we would like to also have the option to generate .css.erb, .sass.erb or .scss.erb files
 to indicate to sprockets that they should be run through ERB as part of the asset pipeline.
 
 This would allow our rake task to specify this:
@@ -123,8 +113,9 @@ Instead of the hard coded prepend suggested earlier:
 
     SpriteFactory.csspath = "/assets/"
 
-But I'll need to update sprite-factory to allow output filename overrides, perhaps a simple :erb => true
-argument to add the .erb extension ?
+So I'll need to update sprite-factory to allow output filename overrides, perhaps a simple :erb => true
+argument to add the .erb extension ? or a very explicit :output_stylesheet => 'path', :output_image => 'path'
+
 
 
 

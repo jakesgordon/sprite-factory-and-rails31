@@ -39,7 +39,6 @@ module SpriteFactoryAndRails31
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    config.assets.paths << File.join(config.root, config.paths["app/assets"], 'sprites') # include sprites folder in asset paths
 
   end
 end
